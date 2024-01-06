@@ -1,0 +1,23 @@
+export default function Maths(props)
+{    let n1=props.num1;
+    let n2=props.num2;
+    let op=props.op
+    let result
+      switch (op) {
+        case '+': result=n1+n2; break;
+        case '/': result=n1/n2; break;
+        case '-': result=n1-n2; break;
+        case '*': result=n1*n2; break;
+      
+        default:
+            <p>Wrong Choice </p>
+            break;
+      }
+
+    return(
+        <p>
+
+            {n1} {op} {n2} = {n1+n2}
+        </p>
+    )
+}
